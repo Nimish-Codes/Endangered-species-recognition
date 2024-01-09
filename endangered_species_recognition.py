@@ -83,12 +83,12 @@ def main():
           if predicted_class_name == endangered_animals:
             st.write(f" '{predicted_class_name}' is an endangered animal")
           else:
-            st.write(f"*This is an image of '{predicted_class_name}', [matching {confidence:.2f} (in scale of 0 to 1)]")
-            st.write("*Given image is either not of an animal or is not endangered animal")
+            st.write(f"* This is an image of '{predicted_class_name}', [matching {confidence:.2f} (in scale of 0 to 1)]")
+            st.write("* Given image is either not of an animal or is not endangered animal")
         else:
-            st.write("*Not found in dataset")
+            st.write("* Not found in dataset")
 
 if __name__ == "__main__":
     main()
 
-st.write("*Note: Expect better result by uploading better quality image")
+st.write("* Note: Expect better result by uploading better quality image")
