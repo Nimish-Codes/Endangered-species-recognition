@@ -80,7 +80,7 @@ def main():
 
         # Check if the confidence is above the threshold
         if confidence >= confidence_threshold:
-          if predicted_class_name == endangered_animals:
+          if predicted_class_name in endangered_animals:
             st.write(f" '{predicted_class_name}' is an endangered animal")
           else:
             st.write(f"* This is an image of '{predicted_class_name}', [matching {confidence:.2f} (in scale of 0 to 1)]")
